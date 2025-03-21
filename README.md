@@ -2,6 +2,9 @@
 
 A PySpark implementation of 6 lesser-known Scikit-Learn features optimized for Azure Databricks. This project translates powerful machine learning techniques from Scikit-Learn into PySpark's distributed computing framework, allowing you to apply these techniques to large-scale datasets in a cloud environment.
 
+<img width="451" alt="Screenshot 2025-03-21 at 08 44 33" src="https://github.com/user-attachments/assets/6442989a-30fe-4aae-857a-11aa418f5ef9" />
+
+
 ## 🚀 Features
 
 This library implements PySpark equivalents of six powerful Scikit-Learn features:
@@ -63,6 +66,8 @@ param_range, metrics = validation_curves(
 plot = plot_validation_curves(param_range, metrics)
 display(plot)
 ```
+![validation_curve](https://github.com/user-attachments/assets/dd5690fa-8ad4-470a-bbff-9ffea3157c96)
+
 
 #### 2. Probability Prediction
 
@@ -71,6 +76,7 @@ display(plot)
 predictions = probability_prediction(df_features)
 display(predictions)
 ```
+<img width="285" alt="Screenshot 2025-03-21 at 08 45 26" src="https://github.com/user-attachments/assets/22cf05eb-7465-4b7b-8d48-62d011974d01" />
 
 #### 3. Robust Scaling
 
@@ -79,6 +85,7 @@ display(predictions)
 df_scaled = robust_scaling(df, columns=["sepal_length", "sepal_width"])
 display(df_scaled)
 ```
+<img width="476" alt="Screenshot 2025-03-21 at 08 45 53" src="https://github.com/user-attachments/assets/e7e250fc-ab3f-4ddf-9956-37a8eb82414d" />
 
 #### 4. Feature Union
 
@@ -87,6 +94,7 @@ display(df_scaled)
 df_combined = feature_union(df_features)
 display(df_combined)
 ```
+<img width="443" alt="Screenshot 2025-03-21 at 08 46 17" src="https://github.com/user-attachments/assets/3fbf630b-7cff-4b51-ad29-9203695d88d9" />
 
 #### 5. Feature Dimensionality Reduction
 
@@ -99,6 +107,7 @@ display(df_clustered)
 df_pca = feature_dimensionality_reduction(df_features, method="pca", k=2)
 display(df_pca)
 ```
+<img width="313" alt="Screenshot 2025-03-21 at 08 46 54" src="https://github.com/user-attachments/assets/e5eb67e2-65af-4ed2-806a-5546aa152aaa" />
 
 #### 6. Predefined Split
 
@@ -109,6 +118,7 @@ df_with_split = add_split_column(df_features, split_condition="custom")
 # Use predefined split for validation
 model, train_df, test_df = predefined_split(df_with_split, split_col="is_train")
 ```
+<img width="286" alt="Screenshot 2025-03-21 at 08 47 37" src="https://github.com/user-attachments/assets/b39e241d-3a05-4087-8cd8-2240b0686f5b" />
 
 ## 🧰 Helper Functions
 
